@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "checkJs": true
+    "checkJs": true,
+    "module": "commonjs",
+    "target": "esnext"
   },
-  "include": ["lib", "test"],
+  "include": ["lib/*.js", "test/*.js"],
   "exclude": ["node_modules"]
 }
