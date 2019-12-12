@@ -1,0 +1,32 @@
+{
+  "name": "using-components",
+  "version": "0.1.0",
+  "main": "./lib/main.js",
+  "license": "MIT",
+  "files": [
+    "lib/main.js",
+    "lib/tags.js",
+    "lib/components.js"
+  ],
+  "scripts": {
+    "test": "jest test",
+    "lint": "eslint lib test --ext .js"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true
+  },
+  "dependencies": {
+    "find-up": "^4.1.0",
+    "htmlparser2": "^4.0.0",
+    "pkg-dir": "^4.2.0"
+  }
+}

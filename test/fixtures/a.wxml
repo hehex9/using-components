@@ -1,0 +1,8 @@
+<view>1</view>
+
+<image src="fake url" />
+
+<custom-view>
+  <view>abc</view>
+  <custom-view-two />
+</custom-view>
