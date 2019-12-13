@@ -3,31 +3,24 @@ const { findComponent } = require('../lib/components')
 
 const fixtureHome = fixture('pages/home/home.wxml')
 const fixtureProfile = fixture('pages/profile/profile.wxml')
+const globalPath = fixture()
 
-const cases1 = [
-  [[fixtureHome, 'c-not-found'], null],
-  [[fixtureHome, 'c-two'], 'components/c-two/c-two'],
-]
+test('find child component', async () => {
+  await findComponent(fixtureHome, 'c-not-found').then(r =>
+    expect(r).toBe(null)
+  )
 
-const cases2 = [
-  [
-    [fixtureProfile, 'c-two', { globalPath: fixture() }],
-    '/components/c-two/c-two',
-  ],
-]
+  await findComponent(fixtureHome, 'c-two', { globalPath }).then(r =>
+    expect(r).toBe('components/c-two/c-two')
+  )
 
-test('find child component', () => {
-  return Promise.all(
-    cases1.map(([args, output]) =>
-      findComponent(...args).then(r => expect(r).toBe(output))
-    )
+  await findComponent(fixtureHome, 'c-three', { globalPath }).then(r =>
+    expect(r).toBe('/components/c-three/index')
   )
 })
 
-test('find nearest component', () => {
-  return Promise.all(
-    cases2.map(([args, output]) =>
-      findComponent(...args).then(r => expect(r).toBe(output))
-    )
+test('find nearest component', async () => {
+  await findComponent(fixtureProfile, 'c-two', { globalPath }).then(r =>
+    expect(r).toBe('/components/c-two/c-two')
   )
 })

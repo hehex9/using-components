@@ -2,6 +2,16 @@ const { fixture } = require('./util')
 const { usingComponents } = require('../lib/main')
 const { globalComponents } = require('../lib/components')
 
+test('using components (c-one)', async () => {
+  const path = fixture('components/c-one/c-one.wxml')
+  const result = await usingComponents(path, {
+    globalPath: fixture(),
+    globalComponents: await globalComponents(path),
+  })
+
+  expect(result).toEqual({ 'c-two': '/components/c-two/c-two' })
+})
+
 test('using components (home)', async () => {
   const path = fixture('pages/home/home.wxml')
   const result = await usingComponents(path, {
@@ -9,12 +19,10 @@ test('using components (home)', async () => {
     globalComponents: await globalComponents(path),
   })
 
-  expect(result).toEqual(
-    new Map([
-      ['c-one', '/components/c-one/c-one'],
-      ['c-two', 'components/c-two/c-two'],
-    ])
-  )
+  expect(result).toEqual({
+    'c-one': '/components/c-one/c-one',
+    'c-two': 'components/c-two/c-two',
+  })
 })
 
 test('using components (profile)', async () => {
@@ -24,5 +32,5 @@ test('using components (profile)', async () => {
     globalComponents: await globalComponents(path),
   })
 
-  expect(result).toEqual(new Map([['c-two', '/components/c-two/c-two']]))
+  expect(result).toEqual({ 'c-two': '/components/c-two/c-two' })
 })
