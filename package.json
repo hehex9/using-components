@@ -1,6 +1,6 @@
 {
   "name": "using-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib/main.js",
   "license": "MIT",
   "files": [
@@ -10,7 +10,9 @@
     "lib/tags.js",
     "lib/components.js"
   ],
-  "bin": "bin/using-components",
+  "bin": {
+    "using-components": "bin/using-components"
+  },
   "scripts": {
     "test": "jest test",
     "lint": "eslint lib test --ext .js"
