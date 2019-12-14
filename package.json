@@ -1,8 +1,13 @@
 {
   "name": "using-components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./lib/main.js",
   "license": "MIT",
+  "description": "ditch usingComponents",
+  "keywords": [
+    "miniprogram",
+    "using-components"
+  ],
   "files": [
     "bin/using-components",
     "lib/cli.js",
