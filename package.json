@@ -1,6 +1,6 @@
 {
   "name": "using-components",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./lib/main.js",
   "license": "MIT",
   "description": "ditch usingComponents",
@@ -13,6 +13,7 @@
     "lib/cli.js",
     "lib/main.js",
     "lib/tags.js",
+    "lib/helpers.js",
     "lib/components.js"
   ],
   "bin": {
