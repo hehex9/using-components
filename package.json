@@ -1,23 +1,24 @@
 {
   "name": "using-components",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "./lib/main.js",
   "license": "MIT",
   "description": "ditch usingComponents",
   "keywords": [
     "miniprogram",
-    "using-components"
+    "using-components",
+    "小程序"
   ],
   "files": [
     "bin/using-components",
-    "lib/cli.js",
-    "lib/main.js",
-    "lib/tags.js",
-    "lib/helpers.js",
-    "lib/components.js"
+    "lib"
   ],
   "bin": {
     "using-components": "bin/using-components"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hehex9/using-components"
   },
   "scripts": {
     "test": "jest test",

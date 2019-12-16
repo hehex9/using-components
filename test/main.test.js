@@ -34,3 +34,14 @@ test('using components (profile)', async () => {
 
   expect(result).toEqual({ 'c-two': '/components/c-two/c-two' })
 })
+
+test('using components (profile.axml)', async () => {
+  const path = fixture('pages/profile/profile.axml')
+  const result = await usingComponents(path, {
+    ext: 'wxml',
+    globalPath: fixture(),
+    globalComponents: [],
+  })
+
+  expect(result).toEqual({ 'c-axml-one': '/components/c-axml-one/index' })
+})

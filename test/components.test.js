@@ -24,3 +24,10 @@ test('find nearest component', async () => {
     expect(r).toBe('/components/c-two/c-two')
   )
 })
+
+test('find axml component', async () => {
+  const file = fixture('pages/profile/profile.axml')
+  await findComponent(file, 'c-axml-one', { globalPath, ext: 'axml' }).then(r =>
+    expect(r).toBe('/components/c-axml-one/index')
+  )
+})
