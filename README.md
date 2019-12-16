@@ -4,16 +4,10 @@
 
 ## 使用
 
-安装
-
-```
-yarn add using-components -D
-```
-
-使用
-
 ```
 npx using-components dist --write
+
+npx using-components dist --write --ext axml // --ext defaults to wxml
 ```
 
 
