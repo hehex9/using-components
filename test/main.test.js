@@ -38,7 +38,7 @@ test('using components (profile)', async () => {
 test('using components (profile.axml)', async () => {
   const path = fixture('pages/profile/profile.axml')
   const result = await usingComponents(path, {
-    ext: 'wxml',
+    ext: 'axml',
     globalPath: fixture(),
     globalComponents: [],
   })

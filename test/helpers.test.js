@@ -1,4 +1,5 @@
-const { getArg, shallowEqual } = require('../lib/helpers')
+const { fixture } = require('./util')
+const { findExists, getArg, shallowEqual } = require('../lib/helpers')
 
 test('is object equal', () => {
   expect(shallowEqual(null, {})).toBeFalsy()
@@ -26,4 +27,14 @@ test('getArg', () => {
   expect(getArg(argv, 'count')).toBe('1')
   expect(getArg(argv, 'dry-run')).toBeNull()
   expect(getArg(argv, '--dry-run')).toBeNull()
+})
+
+test('find exists', async () => {
+  /** @type {[string, string][]} */
+  const input1 = [
+    [fixture('a.wxml'), 'a.wxml'],
+    [fixture('404.wxml'), 'notfound.wxml'],
+  ]
+
+  expect(await findExists(input1)).toBe('a.wxml')
 })
