@@ -8,6 +8,8 @@
 npx using-components dist --write
 
 npx using-components dist --write --ext axml // --ext defaults to wxml
+
+npx using-components -h
 ```
 
 
@@ -48,7 +50,8 @@ home.json:
 * 读取 wxml 文件内容，得到自定义组件名列表 (过滤 app.json 里出现的组件名)
 * [find-up](https://www.npmjs.com/package/find-up) 可能存在该组件的 components
 * 根据参数 (--write)，决定是否写入 json
-* 另外：预设 `components` 作为自定义组件目录名 (TODO)
+* 预设 `components` 作为自定义组件目录名 (--dirname)
+* 预设 `wxml` 作为组件文件后缀 (--ext)
 
 ## License
 
