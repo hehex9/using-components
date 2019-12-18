@@ -1,5 +1,5 @@
 const { fixture } = require('./util')
-const { findExists, getArg, shallowEqual } = require('../lib/helpers')
+const { findExists, hasArg, getArg, shallowEqual } = require('../lib/helpers')
 
 test('is object equal', () => {
   expect(shallowEqual(null, {})).toBeFalsy()
@@ -18,17 +18,6 @@ test('is object equal', () => {
   ).toBeFalsy()
 })
 
-test('getArg', () => {
-  const argv = ['--name', 'foo', '--count', '1', '--dry-run']
-
-  expect(getArg(argv, 'name')).toBe('foo')
-  expect(getArg(argv, '--name')).toBe('foo')
-
-  expect(getArg(argv, 'count')).toBe('1')
-  expect(getArg(argv, 'dry-run')).toBeNull()
-  expect(getArg(argv, '--dry-run')).toBeNull()
-})
-
 test('find exists', async () => {
   /** @type {[string, string][]} */
   const input1 = [
@@ -37,4 +26,25 @@ test('find exists', async () => {
   ]
 
   expect(await findExists(input1)).toBe('a.wxml')
+})
+
+describe('cli args helpers', () => {
+  const argv = ['--name', 'foo', '--count', '1', '--dry-run']
+
+  test('getArg', () => {
+    expect(getArg(argv, 'name')).toBe('foo')
+    expect(getArg(argv, '--name')).toBe('foo')
+
+    expect(getArg(argv, 'count')).toBe('1')
+    expect(getArg(argv, 'dry-run')).toBeNull()
+    expect(getArg(argv, '--dry-run')).toBeNull()
+  })
+
+  test('hasArg', () => {
+    expect(hasArg(argv, 'name')).toBeTruthy()
+    expect(hasArg(argv, 'no')).toBeFalsy()
+    expect(hasArg(argv, 'dry-run')).toBeTruthy()
+    expect(hasArg(argv, '--name')).toBeTruthy()
+    expect(hasArg(argv, '1')).toBeFalsy()
+  })
 })
