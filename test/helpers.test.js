@@ -24,8 +24,10 @@ test('find exists', async () => {
     [fixture('a.wxml'), 'a.wxml'],
     [fixture('404.wxml'), 'notfound.wxml'],
   ]
-
   expect(await findExists(input1)).toBe('a.wxml')
+
+  const input2 = [fixture('a.wxml'), fixture('404.wxml')]
+  expect(await findExists(input2)).toBe(fixture('a.wxml'))
 })
 
 describe('cli args helpers', () => {
