@@ -6,6 +6,7 @@ test('is object equal', () => {
   expect(shallowEqual(null, null)).toBeTruthy()
   expect(shallowEqual(undefined, undefined)).toBeTruthy()
   expect(shallowEqual(NaN, NaN)).toBeTruthy()
+  expect(shallowEqual('string', 'string')).toBeTruthy()
 
   expect(shallowEqual({}, {})).toBeTruthy()
   expect(shallowEqual({ a: 1, b: 2 }, { a: 1, b: 2 })).toBeTruthy()
@@ -48,5 +49,6 @@ describe('cli args helpers', () => {
     expect(hasArg(argv, 'dry-run')).toBeTruthy()
     expect(hasArg(argv, '--name')).toBeTruthy()
     expect(hasArg(argv, '1')).toBeFalsy()
+    expect(hasArg(argv, 'foo')).toBeFalsy()
   })
 })
