@@ -25,19 +25,15 @@
     "lint": "eslint lib test --ext .js"
   },
   "devDependencies": {
+    "@hehe.x/eslint-config": "^0.1.2",
+    "@hehe.x/prettier": "^1.0.0",
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.17",
     "eslint": "^6.7.2",
     "jest": "^24.9.0",
     "prettier": "^1.19.1"
   },
-  "prettier": {
-    "tabWidth": 2,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "bracketSpacing": true
-  },
+  "prettier": "@hehe.x/prettier",
   "dependencies": {
     "fast-glob": "^3.1.1",
     "find-up": "^4.1.0",

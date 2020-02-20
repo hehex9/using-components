@@ -18,7 +18,7 @@ describe('find components', () => {
   })
 
   test('find nearest component', async () => {
-    let r = await findComponent(fixtureProfile, 'c-two', { root })
+    const r = await findComponent(fixtureProfile, 'c-two', { root })
     expect(r).toBe('/components/c-two/c-two')
   })
 })
@@ -27,7 +27,7 @@ describe('find components with options', () => {
   const file = fixture('pages/profile/profile.axml')
 
   test('find axml component', async () => {
-    let r = await findComponent(file, 'c-axml-one', { root, ext: 'axml' })
+    const r = await findComponent(file, 'c-axml-one', { root, ext: 'axml' })
     expect(r).toBe('/components/c-axml-one/index')
   })
 

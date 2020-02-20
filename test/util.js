@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 /**
- * @param {string} name
+ * @param {string} [name]
  * @returns {string}
  */
 const fixture = name => path.join(__dirname, 'fixtures', name || '')
