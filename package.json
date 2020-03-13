@@ -1,6 +1,6 @@
 {
   "name": "using-components",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "./lib/main.js",
   "license": "MIT",
   "description": "ditch usingComponents",
