@@ -1,6 +1,6 @@
 {
   "name": "using-components",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "./lib/main.js",
   "license": "MIT",
   "description": "ditch usingComponents",
@@ -25,19 +25,19 @@
     "lint": "eslint lib test --ext .js"
   },
   "devDependencies": {
-    "@hehe.x/eslint-config": "^0.1.2",
+    "@hehe.x/eslint-config": "^0.2.4",
     "@hehe.x/prettier": "^1.0.0",
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.17",
-    "eslint": "^6.7.2",
-    "jest": "^24.9.0",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.1",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1"
   },
   "prettier": "@hehe.x/prettier",
   "dependencies": {
-    "fast-glob": "^3.1.1",
+    "fast-glob": "^3.2.2",
     "find-up": "^4.1.0",
-    "htmlparser2": "^4.0.0",
+    "htmlparser2": "^4.1.0",
     "is-mina-tag": "^1.0.3"
   }
 }
