@@ -38,6 +38,6 @@
     "fast-glob": "^3.2.2",
     "find-up": "^4.1.0",
     "htmlparser2": "^4.1.0",
-    "is-mina-tag": "^1.0.3"
+    "is-mina-tag": "^1.0.4"
   }
 }

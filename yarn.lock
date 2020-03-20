@@ -2358,10 +2358,10 @@ is-glob@^4.0.0, is-glob@^4.0.1:
   dependencies:
     is-extglob "^2.1.1"
 
-is-mina-tag@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/is-mina-tag/-/is-mina-tag-1.0.3.tgz#d235118a46943bb2220d46528e26c9b9601851bb"
-  integrity sha512-JzxmF197OhLd+i3t+GSLsYCXER6iiv3LVZM9xyjmhB6hAlS5O3q+uluGBCY0B+S9opR5HRp9iD9AhWolEJyqaw==
+is-mina-tag@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/is-mina-tag/-/is-mina-tag-1.0.4.tgz#355fc34c8aa35999eb5f58dc3074f3e4429643a1"
+  integrity sha512-9O/kTFYyFHnAw8FZNsfUCayY+w77aQrqSpvzx+ikZ+sn5n7lYnkmYCDnYaFGNDI0mmW3/BbaiN79/xgJGz1K+Q==
 
 is-number@^3.0.0:
   version "3.0.0"
