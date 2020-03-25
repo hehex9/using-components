@@ -28,7 +28,7 @@
     "@hehe.x/eslint-config": "0.2.4",
     "@hehe.x/prettier": "1.0.0",
     "@types/jest": "25.1.4",
-    "@types/node": "13.9.3",
+    "@types/node": "13.9.4",
     "eslint": "6.8.0",
     "jest": "25.1.0",
     "prettier": "1.19.1"
