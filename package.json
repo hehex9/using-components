@@ -30,7 +30,7 @@
     "@types/jest": "25.1.4",
     "@types/node": "13.9.3",
     "eslint": "6.8.0",
-    "jest": "25.1.0",
+    "jest": "25.2.3",
     "prettier": "1.19.1"
   },
   "prettier": "@hehe.x/prettier",
