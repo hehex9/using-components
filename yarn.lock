@@ -304,10 +304,10 @@
     eslint-plugin-react-hooks "^2.5.0"
     eslint-plugin-unicorn "^17.2.0"
 
-"@hehe.x/prettier@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@hehe.x/prettier/-/prettier-1.0.0.tgz#b28d6731682a49fe34cc3621139e4f636651f5ba"
-  integrity sha512-qQ+vrBQ3RG748IOhSzIkJv7bW7si3Pz3fBIT8/+JAGiSqeVP4zKTL9VFVjanxcK7Lt2qvIADlZgc4xNw4U5M0Q==
+"@hehe.x/prettier@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@hehe.x/prettier/-/prettier-1.0.1.tgz#80473272762ab687ee4cec7ad5d913bdfa8bf2e6"
+  integrity sha512-9i59sKN+NaQFnd5lMmsLPBfLcXSqXuVah2X7doiZz2HnyRydDICGQTRFjziZQJmBn1F8qHBMTlzNfijI2OthWA==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.0.0"
