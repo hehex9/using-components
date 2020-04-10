@@ -11,8 +11,9 @@ jobs:
           install-yarn: true
           node-version: 12.16.1
       - node/install-packages
-      - yarn lint
-      - yarn test
+          pkg-manager: yarn
+      - run: yarn lint
+      - run: yarn test
 workflows:
     build-and-test:
       jobs:
