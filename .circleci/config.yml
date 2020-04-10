@@ -12,6 +12,7 @@ jobs:
           node-version: 12.16.1
       - node/install-packages:
           pkg-manager: yarn
+          cache-key: yarn.lock
       - run: yarn lint
       - run: yarn test
 workflows:
