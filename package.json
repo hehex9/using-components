@@ -37,7 +37,7 @@
   "dependencies": {
     "fast-glob": "^3.2.2",
     "find-up": "^5.0.0",
-    "htmlparser2": "^4.1.0",
+    "htmlparser2": "^8.0.0",
     "is-mina-tag": "^1.0.4"
   }
 }
