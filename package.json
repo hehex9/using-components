@@ -31,7 +31,7 @@
     "@types/node": "13.9.4",
     "eslint": "7.5.0",
     "jest": "26.2.0",
-    "prettier": "2.0.5"
+    "prettier": "2.7.1"
   },
   "prettier": "@hehe.x/prettier",
   "dependencies": {
